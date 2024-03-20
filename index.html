@@ -1,24 +1,29 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Encriptador de texto</title>
-        <script src="funciones-encriptador.js"></script>
-    </head>
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Encriptador de texto</title>
+     <script src="funciones-encriptador.js"></script>
+</head>
 
-    <body>
-        <header>
-            <h1>Encriptador de texto</h1>
-        </header>
+<body>
+     <header>
+        <h1>Encriptador de texto</h1>
+     </header>
         
-        <main>
-            <input type="text" id="padrasto">
-            <button onclick="encriptar()">Tomar valor</button>
-        </main>
+     <main>
+        <button>Copiar texto</button>
+        <div>
+            <input type="text" id="texto">
+            <button onclick="encriptar()">Encriptar</button> 
+            <button onclick="desencriptar()">Desencriptar</button>  
+        </div>
+           
+     </main>
 
-        <footer>
-            <p>Pagina creada por Jhonatan para Alura Latam &#169;</p>
-        </footer>
-    </body>
+     <footer>
+        <p>Pagina creada por Jhonatan para Alura Latam &#169;</p>
+    </footer>
+</body>
 </html>

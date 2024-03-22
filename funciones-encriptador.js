@@ -1,14 +1,17 @@
-let letras=["a", "e", "i", "o", "u"]
-let cambioDeLaVocal=["ai", "enter", "imes", "ober", "ufat"]
-let textoInput=""
-let nuevoTexto=""
+let letras=["a", "e", "i", "o", "u"];
+let cambioDeLaVocal=["ai", "enter", "imes", "ober", "ufat"];
+let textoInput="";
+let nuevoTexto="";
 
+
+function tomarTextoInput(params) {
+    textoInput=document.getElementById("texto").value;
+    /*Coloque aqui el valor del input text ya que al declarlo al principio me daba un valor null*/   
+}
 
 function encriptar() {  
-    if (textoInput=="") {
-        /*Coloque aqui el valor del input text ya que al declarlo al principio me daba un valor null*/
-        textoInput=document.getElementById("texto").value;
-    }
+    tomarTextoInput();
+
     for (let i = 0; i < textoInput.length; i++) {
         nuevoTexto=nuevoTexto+textoInput[i];
         for (let i2 = 0; i2 < letras.length; i2++) {
@@ -20,39 +23,30 @@ function encriptar() {
         }
         
     }
-    textoInput=""
-    console.log(nuevoTexto);
-    nuevoTexto=""
+    document.getElementById("texto").value=nuevoTexto;
+    textoInput="";
+    nuevoTexto="";
 }
 
 function desencriptar() {
-    if (textoInput=="") {
-        /*Coloque aqui el valor del input text ya que al declarlo al principio me daba un valor null*/
-        textoInput=document.getElementById("texto").value;
-    }
+    tomarTextoInput();
 
     for (let i = 0; i < letras.length; i++) {
         textoInput=textoInput.replaceAll(cambioDeLaVocal[i], letras[i]);  
     }
-    console.log(textoInput);
-    textoInput=""
+    document.getElementById("texto").value=textoInput;
+    textoInput="";
+
 }
 
-
-
-
-
-
-
-
-
-
-    
-
-
-    /*let textoConvertido=textoInput.replaceAll("a", "ai");
-    let textoConvertido2=textoConvertido.replaceAll("e", "enter");
-    let textoConvertido3=textoConvertido2.replaceAll("i", "imes");
-    let textoConvertido4=textoConvertido3.replaceAll("o", "ober");
-    let textoConvertido5=textoConvertido4.replaceAll("u", "ufat");
-    console.log(textoConvertido5);*/
+async function copiarTexto() {
+    tomarTextoInput();
+    try {
+      await navigator.clipboard.writeText(textoInput);
+      console.log('Contenido copiado al portapapeles');
+      /* Resuelto - texto copiado al portapapeles con éxito */
+    } catch (err) {
+      console.error('Error al copiar: ', err);
+      /* Rechazado - fallo al copiar el texto al portapapeles */
+    }
+}

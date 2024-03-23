@@ -4,32 +4,35 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <title>Encriptador de texto</title>
+     <link rel="stylesheet" href="reset.css">
+     <link rel="stylesheet" href="style.css">
      <script src="funciones-encriptador.js"></script>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Crafty+Girls&family=Noto+Sans+Mende+Kikakui&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
      
       
       
 </head>
 
 <body>
-     <header>
-        <h1  style="font-family: Noto Sans Mende Kikakui, sans-serif" class="ncrafty-girls-regular">Encriptador de texto</h1>
-     </header>
-        
-     <main>
-        <button id="copiartexto" onclick="copiarTexto()">Copiar texto</button>
-        <div>
-            <input type="text" id="texto">
-            <button onclick="encriptar()">Encriptar</button> 
-            <button onclick="desencriptar()">Desencriptar</button>  
-        </div>
-           
-     </main>
+   <header>
+      <h1 class="ncrafty-girls-regular">Encriptador de texto</h1>
+   </header>
+      
+   <main>
+       <button id="copiartexto" onclick="copiarTexto()" class="boton-copiarTexto">Copiar texto</button>
+       <input type="text" id="texto" class="input-texto" autofocus>
+       <button onclick="encriptar()" class="boton-encriptar">Encriptar</button> 
+       <button onclick="desencriptar()" class="boton-desencriptar">Desencriptar</button>  
+      
+   </main>
 
-     <footer>
-        <p>Pagina creada por Jhonatan para Alura Latam &#169;</p>
-    </footer>
+   <footer>
+      <p>Pagina creada por Jhonatan para Alura Latam &#169;</p>
+   </footer>
 </body>
 </html>

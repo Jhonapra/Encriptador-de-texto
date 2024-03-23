@@ -1,3 +1,74 @@
-/*Creacion de los estilos para esta pagina*/
-  
+/*Creacion de los estilos para esta pagina, el estilo debe ser como una carta con palabras
+raras que parezcan otro idioma, y que inciten a la encriptacion*/
 
+body{
+    margin-top: 12%;
+}
+
+body header{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 30%;
+    left: 27%;
+    font-size: 30px;
+}
+
+body main{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 20px 25%;
+    background-color: beige;
+}
+
+
+
+.boton-encriptar{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    background-color: beige; 
+}
+
+.boton-desencriptar{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    background-color: beige;
+}
+
+.boton-copiarTexto{
+    font-family: "Roboto", sans-serif;
+    position: absolute;
+    top: 70%;
+    left: 43.9%;
+    background-color: beige;
+}
+
+.input-texto{
+    
+    position: absolute;
+    top: 35%;
+    left: 27%; 
+    width: 400px;
+    height: 300px;
+    background-color: beige;
+}
+
+body main, footer{
+    font-family: "Libre Barcode 128 Text", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
+
+footer{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0;
+    margin: 15px 15px;
+}

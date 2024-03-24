@@ -14,12 +14,12 @@ body header{
 }
 
 body main{
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
-    margin: 20px 25%;
+    background-position: absolute;
+    margin: 10% 25% 1px 25%;
+    width: 50%;
+    height: 470px;
     background-color: beige;
+    
 }
 
 .imagen{
@@ -35,7 +35,7 @@ body main{
     font-family: "Roboto", sans-serif;
     position: absolute;
     top: 50%;
-    left: 52%;
+    left: 55%;
     background-color: beige;
     border: none;
     font-size: 17px;
@@ -47,7 +47,7 @@ body main{
     font-family: "Roboto", sans-serif;
     position: absolute;
     top: 60%;
-    left: 52%;
+    left: 55%;
     background-color: beige;
     border: none;
     font-size: 17px;
@@ -58,8 +58,8 @@ body main{
     cursor: pointer;
     font-family: "Roboto", sans-serif;
     position: absolute;
-    top: 70%;
-    left: 43.3%;
+    top: 71%;
+    left: 44%;
     background-color: beige;
     border: none;
     transition: 0.6s;
@@ -67,10 +67,10 @@ body main{
 
 .input-texto{
     
-    position: absolute;
+    position:  absolute;
     top: 35%;
     left: 27%; 
-    width: 400px;
+    width: 414px;
     height: 300px;
     background-color: beige;
 }
@@ -80,22 +80,22 @@ body main{
     font-size: 14px;
     position: absolute;
     top: 64%;
-    left: 52.3%;
+    left: 55.5%;
 }
 
 #texto-encriptar{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     position: absolute;
-    top: 53%;
-    left: 52.3%;
+    top: 54%;
+    left: 55.5%;
 }
 
 .imagen-informacion{
     width: 10px;
     height: 10px;
     position: absolute;
-    top: 70.6%;
+    top: 71.6%;
     left: 27%;
 }
 
@@ -110,7 +110,7 @@ body main, footer{
     font-size: 12px;
     font-family: "Roboto", sans-serif;
     position: absolute;
-    top: 70.6%;
+    top: 71.6%;
     left: 28%;
 }
 

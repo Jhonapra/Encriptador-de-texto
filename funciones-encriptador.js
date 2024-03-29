@@ -2,6 +2,7 @@ let letras=["a", "e", "i", "o", "u"];
 let cambioDeLaVocal=["ai", "enter", "imes", "ober", "ufat"];
 let textoInput="";
 let nuevoTexto="";
+/*Pruba de git*/
 
 
 function tomarTextoInput(params) {

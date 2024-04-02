@@ -36,7 +36,7 @@ body main{
     position: absolute;
     top: 50%;
     left: 55%;
-    background-color: beige;
+    background-color: transparent;
     border: none;
     font-size: 17px;
     transition: 0.6s;
@@ -48,7 +48,7 @@ body main{
     position: absolute;
     top: 60%;
     left: 55%;
-    background-color: beige;
+    background-color: transparent;
     border: none;
     font-size: 17px;
     transition: 0.6s;
@@ -60,7 +60,7 @@ body main{
     position: absolute;
     top: 71%;
     left: 44%;
-    background-color: beige;
+    background-color: transparent;
     border: none;
     transition: 0.6s;
 }
